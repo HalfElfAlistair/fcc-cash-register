@@ -10,7 +10,7 @@
 			  height: auto;
 			}
     </style>
-    <script src="cash-register - Copy.js" type="text/javascript" charset="utf-8"></script>
+    <script src="cash-register.js" type="text/javascript" charset="utf-8"></script>
     </head>
     <body>
       <div class="conversion-section">
@@ -19,9 +19,9 @@
             <div>
                 <h3>Purchase details.</h3>
                 <label for="price">Price of goods purchased:</label>
-                <input type="text" id="price" value="0.50">
+                <input type="number" id="price" value="0.50" min="0">
                 <label for="cash">Cash paid:</label>
-                <input type="text" id="cash" value="0.70">
+                <input type="number" id="cash" value="0.70" min="0">
             </div>
             <div>
                 <h3>Cash totals in the register drawers.</h3>
@@ -48,9 +48,6 @@
                 <input value="Submit" onclick="checkCashRegister()" type="button" id="submit-button" class="sub-button">
             </div>
         </form>
-        <p id="change-message"></p>
-        <p id="test-price"></p>
-        <p id="test-cash"></p>
-        <p id="test-cid"></p>
+        <p id="result"></p>
       </div>
     </body>
