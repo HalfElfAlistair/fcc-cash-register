@@ -1,0 +1,12 @@
+body {
+    font-family: Helvetica, Arial, sans-serif;
+	overflow-x: hidden;
+	margin: 0;
+    line-height: 1.6;
+    background-color: #F9FAF8;
+    padding: 5%;
+}
+
+.currency-input {
+    float: right;
+}
