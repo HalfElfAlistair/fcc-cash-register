@@ -14,10 +14,12 @@
     </head>
     <body>
       <h1>FCC Cash Register</h1>
-      <p>This was the 5th challenge for the JavaScript Algorithms and Data Structures Projects.<br><br>I found it the hardest but also it provided the greatest learning opportunities.<br><br>In particular, once I made this repo and started working on the JS code as part of a working HTML page I improved my RegExp knowledge and debugging skills.<br><br>Check below for the project aims or you can <a href="#conversion">navigate straight to the cash register.</a></p>
-      <p>Design a cash register drawer function checkCashRegister() that accepts purchase price as the first argument (price), payment as the second argument (cash), and cash-in-drawer (cid) as the third argument.<br><br>cid is a 2D array listing available currency.<br><br>The checkCashRegister() function should always return an object with a status key and a change key.<br><br>Return {status: "INSUFFICIENT_FUNDS", change: []} if cash-in-drawer is less than the change due, or if you cannot return the exact change.<br><br>Return {status: "CLOSED", change: [...]} with cash-in-drawer as the value for the key change if it is equal to the change due.<br><br>Otherwise, return {status: "OPEN", change: [...]}, with the change due in coins and bills, sorted in highest to lowest order, as the value of the change key.</p>
+      <p>This was the 5th challenge for the JavaScript Algorithms and Data Structures Projects.<br><br>I found it the hardest but also it provided the greatest learning opportunities.<br><br>In particular, once I made this repo and started developing the JS code as part of a working HTML page, I improved my RegExp knowledge and debugging skills.<br><br>Check below for the project aims or you can <a href="#conversion">navigate straight to the cash register.</a></p>
+      <h3>Project Aims</h3>
+      <p>Design a cash register drawer function <b>checkCashRegister()</b> that accepts purchase price as the first argument <b>(price)</b>, payment as the second argument <b>(cash)</b>, and cash-in-drawer <b>(cid)</b> as the third argument. <b>cid</b> is a 2D array listing available currency.<br><br>The <b>checkCashRegister()</b> function should always return an object with a status key and a change key.<br><br>Return <b>{status: "INSUFFICIENT_FUNDS", change: []}</b> if cash-in-drawer is less than the change due, or if you cannot return the exact change.<br><br>Return <b>{status: "CLOSED", change: [...]}</b> with cash-in-drawer as the value for the key change if it is equal to the change due.<br><br>Otherwise, return <b>{status: "OPEN", change: [...]}</b>, with the change due in coins and bills, sorted in highest to lowest order, as the value of the change key.</p>
       <div class="conversion-section" id="conversion">
-        <h3>Add values to the fields and press submit to view a result message.</h3>
+        <h2>The program</h2>
+        <p>Add values to the fields and press submit to view a result message.</p>
         <form>
             <div>
                 <h3>Purchase details.</h3>
