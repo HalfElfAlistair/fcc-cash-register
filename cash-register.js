@@ -71,8 +71,8 @@ let finalChangeTotal = finalChange.reduce((a, b) => a + b, 0);
       (/^\d*(\.[0]{0,2})?$/.test(oneValue) == false ) ||
       (/^\d*([0|5])(\.[0]{0,2})?$/.test(fiveValue) == false ) ||
       (/^\d*([0])(\.[0]{0,2})?$/.test(tenValue) == false ) ||
-      (/^\d*([0][0]|[2][0]|[4][0]|[6][0]|[8][0])(\.[0]{0,2})?$/.test(twentyValue) == false ) ||
-      (/^\d*(0{2,})(\.[0]{0,2})?$/.test(oneHundredValue) == false )) {
+      (/^(\d*([0][0]|[2][0]|[4][0]|[6][0]|[8][0])|0)(\.[0]{0,2})?$/.test(twentyValue) == false ) ||
+      (/^(\d*(0{2,})|0)(\.[0]{0,2})?$/.test(oneHundredValue) == false )) {
     document.getElementById("result").innerHTML = errorMessage;
   } else if ((cidTotal < changeRequest) || (finalChangeTotal < changeRequest)) {
     document.getElementById("result").innerHTML = '&#123;' + 'Status: ' + '"INSUFFICIENT_FUNDS", ' + 'Change: ' + '[]' + '&#125;';
@@ -81,11 +81,4 @@ let finalChangeTotal = finalChange.reduce((a, b) => a + b, 0);
   } else {
     document.getElementById("result").innerHTML = '&#123;' + 'Status: ' + '"OPEN", ' + 'Change: ' + `[${changeArray}]` + '&#125;';
   }
-
 }
-
-
-
-'&#123;' + 'Status: ' + '"OPEN", ' + 'Change: ' + `[${changeArray}]` + '&#125;';
-
-// "Status: OPEN, Change: " + `[${changeArray}]`;
