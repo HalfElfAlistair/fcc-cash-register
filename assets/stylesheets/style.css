@@ -3,10 +3,39 @@ body {
 	overflow-x: hidden;
 	margin: 0;
     line-height: 1.6;
-    background-color: #F9FAF8;
+    background-color: #FAFAFA;
     padding: 5%;
 }
 
+h1,
+h2 {
+    color: #306BAC;
+}
+
+h3 {
+    color: #141414;
+}
+
+p {
+    color: #3B3B3B;
+}
+
+a {
+    color: #306BAC;
+    text-decoration: none;
+}
+
 .currency-input {
-    float: right;
+    width: 97%;
+    margin-bottom: 5%;
+}
+
+#submit-button {
+    background-color: #306BAC;
+    color: #FAFAFA;
+    margin: 5% 0;
+    padding: 5% 0;
+    width: 100%;
+    font-weight: bold;
+    border: none;
 }
