@@ -25,6 +25,10 @@ a {
     text-decoration: none;
 }
 
+a:hover {
+    font-weight: bold;
+}
+
 .currency-input {
     width: 97%;
     margin-bottom: 5%;
