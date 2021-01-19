@@ -81,11 +81,4 @@ let finalChangeTotal = finalChange.reduce((a, b) => a + b, 0);
   } else {
     document.getElementById("result").innerHTML = '&#123;' + 'Status: ' + '"OPEN", ' + 'Change: ' + `[${changeArray}]` + '&#125;';
   }
-
 }
-
-
-
-'&#123;' + 'Status: ' + '"OPEN", ' + 'Change: ' + `[${changeArray}]` + '&#125;';
-
-// "Status: OPEN, Change: " + `[${changeArray}]`;
