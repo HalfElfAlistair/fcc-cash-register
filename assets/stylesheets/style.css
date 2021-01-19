@@ -39,3 +39,8 @@ a {
     font-weight: bold;
     border: none;
 }
+
+#result {
+    overflow-wrap: break-word;
+    font-weight: bold;
+}

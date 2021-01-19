@@ -75,11 +75,17 @@ let finalChangeTotal = finalChange.reduce((a, b) => a + b, 0);
       (/^\d*(0{2,})(\.[0]{0,2})?$/.test(oneHundredValue) == false )) {
     document.getElementById("result").innerHTML = errorMessage;
   } else if ((cidTotal < changeRequest) || (finalChangeTotal < changeRequest)) {
-    document.getElementById("result").innerHTML = "Status: " + "INSUFFICIENT_FUNDS, " + "Change: " + "[]";
+    document.getElementById("result").innerHTML = '&#123;' + 'Status: ' + '"INSUFFICIENT_FUNDS", ' + 'Change: ' + '[]' + '&#125;';
   } else if (cidTotal == changeRequest) {
-    document.getElementById("result").innerHTML = "Status: CLOSED, Change: " + `[${cid}]`;
+    document.getElementById("result").innerHTML = '&#123;' + 'Status: ' + '"CLOSED", ' + 'Change: ' + `[${cid}]` + '&#125;';
   } else {
-    document.getElementById("result").innerHTML = "Status: OPEN, Change: " + `[${changeArray}]`;
+    document.getElementById("result").innerHTML = '&#123;' + 'Status: ' + '"OPEN", ' + 'Change: ' + `[${changeArray}]` + '&#125;';
   }
 
 }
+
+
+
+'&#123;' + 'Status: ' + '"OPEN", ' + 'Change: ' + `[${changeArray}]` + '&#125;';
+
+// "Status: OPEN, Change: " + `[${changeArray}]`;
