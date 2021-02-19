@@ -70,6 +70,8 @@ Once you've downloaded and unzipped the repo file, simply open up the index.html
 
 - Visual Studio Code
 
+- Node.js
+
 - Chrome Devtools
 
 - FCC Console
